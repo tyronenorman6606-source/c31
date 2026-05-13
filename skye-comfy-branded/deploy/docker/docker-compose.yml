@@ -1,0 +1,19 @@
+services:
+  skye-comfy:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    container_name: skye-forge-visual-engine
+    ports:
+      - "8188:8188"
+    volumes:
+      - ./models:/opt/skye-comfy/workspace/ComfyUI/models
+      - ./input:/opt/skye-comfy/workspace/ComfyUI/input
+      - ./output:/opt/skye-comfy/workspace/ComfyUI/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

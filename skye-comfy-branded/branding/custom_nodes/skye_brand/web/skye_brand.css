@@ -1,0 +1,125 @@
+:root {
+  --skye-bg: #05050a;
+  --skye-panel: rgba(10, 12, 22, 0.82);
+  --skye-acid: #d9ff3f;
+  --skye-violet: #8d5cff;
+  --skye-cyan: #69eaff;
+  --skye-text: #f7f8ff;
+  --skye-muted: #9da3b8;
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 10%, rgba(141, 92, 255, 0.18), transparent 35%),
+    radial-gradient(circle at 78% 15%, rgba(217, 255, 63, 0.10), transparent 31%),
+    radial-gradient(circle at 50% 110%, rgba(105, 234, 255, 0.12), transparent 38%),
+    var(--skye-bg) !important;
+}
+
+#skye-brand-bar {
+  position: fixed;
+  z-index: 999999;
+  left: 18px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 360px;
+  max-width: calc(100vw - 36px);
+  padding: 11px 14px;
+  border: 1px solid rgba(217, 255, 63, 0.28);
+  border-radius: 999px;
+  color: var(--skye-text);
+  background: linear-gradient(135deg, rgba(7, 8, 15, 0.9), rgba(22, 15, 46, 0.78));
+  box-shadow: 0 0 28px rgba(141, 92, 255, 0.24), inset 0 0 22px rgba(217, 255, 63, 0.05);
+  backdrop-filter: blur(18px);
+  pointer-events: none;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.skye-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #05050a;
+  background: linear-gradient(135deg, var(--skye-acid), var(--skye-cyan));
+  font-weight: 950;
+  font-size: 11px;
+  letter-spacing: -0.08em;
+  box-shadow: 0 0 22px rgba(217, 255, 63, 0.42);
+}
+
+.skye-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.08;
+  min-width: 0;
+}
+
+.skye-copy strong {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.skye-copy span {
+  margin-top: 3px;
+  color: var(--skye-muted);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.skye-live-pill {
+  margin-left: auto;
+  padding: 7px 9px;
+  border-radius: 999px;
+  color: var(--skye-acid);
+  border: 1px solid rgba(217, 255, 63, 0.22);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  background: rgba(217, 255, 63, 0.06);
+}
+
+#skye-empty-helper {
+  position: fixed;
+  z-index: 99999;
+  right: 18px;
+  bottom: 18px;
+  width: min(390px, calc(100vw - 36px));
+  padding: 16px 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(141, 92, 255, 0.35);
+  color: var(--skye-text);
+  background: linear-gradient(135deg, rgba(8, 9, 17, 0.88), rgba(8, 10, 18, 0.66));
+  box-shadow: 0 0 30px rgba(105, 234, 255, 0.12);
+  backdrop-filter: blur(18px);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  pointer-events: none;
+}
+
+#skye-empty-helper strong {
+  display: block;
+  color: var(--skye-acid);
+  margin-bottom: 6px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#skye-empty-helper span {
+  color: var(--skye-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.comfy-menu, .litegraph, .p-panel, .p-dialog {
+  border-radius: 18px !important;
+}
+
+button, .p-button {
+  border-radius: 999px !important;
+}
