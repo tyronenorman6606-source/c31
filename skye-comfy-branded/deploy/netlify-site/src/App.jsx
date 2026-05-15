@@ -17,7 +17,6 @@ function App() {
 
   return <main>
     <section className="hero">
-      <div className="orb one" /><div className="orb two" />
       <p className="eyebrow">Skyes Over London · kAIxU Operator Build</p>
       <h1>SkyeForge Visual Engine</h1>
       <p className="lede">A branded ComfyUI deployment lane for image, video, inpainting, ControlNet, LoRA, Flux, SD3, WAN, Hunyuan, upscaling, and custom node workflows.</p>

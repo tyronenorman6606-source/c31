@@ -1,0 +1,17 @@
+/.env
+/regular.env
+/.env.local
+/.env.*.local
+/.secrets/
+
+skyehandscde-FULL-SERVER-*/
+skyehandscde-FULL-SERVER-*.tar.gz
+SERVER_RECOVERY_BACKUP/
+FULL_SERVER_EXPORT/
+*.bundle
+
+recovery-from-env/
+recovery-from-gpu/
+
+**/node_modules/
+**/dist/
