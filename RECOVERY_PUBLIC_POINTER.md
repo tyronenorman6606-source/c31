@@ -11,8 +11,8 @@ Local recovery artifacts in this Codespace:
 
 Current private recovery metadata:
 
-- Seed HEAD: `f5658606 Add recovery handoff`
-- Bundle SHA256: `0aee9337036e1673bb21e2b1696837057de8d5348e57819cb081a38e5ef18150`
+- Seed HEAD: `2bee4b09 Document private recovery remote setup`
+- Bundle SHA256: `d6f5745407897e0065ea7b27f6ad87b25538591c959b84d248945a7e2b26beed`
 
 The recovery seed needs a private GitHub remote before pushing:
 
